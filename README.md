@@ -30,8 +30,6 @@ __
 
 ### Credits ###
 
-* Hier
-* kommt
-* bestimmt
-* etwas
-* hin :-)
+* [REDAXO :-)](https://redaxo.org)
+* [MForm](https://github.com/FriendsOfREDAXO/mform)
+* [MBlock](https://github.com/FriendsOfREDAXO/mblock)
