@@ -1,0 +1,31 @@
+package: bootstrap
+version: '0.1'
+author: 'Friends Of REDAXO'
+supportpage: https://github.com/FriendsOfREDAXO/bootstrap/issues
+info: 'Idee und Realisierung der ersten Version: Oliver Kreischer / concedra.de'
+compile: 0
+
+page:
+    title: 'translate:title'
+    perm: bootstrap[]
+    icon: rex-icon fa-bold
+    subpages:
+        info:
+          title: 'Info'
+          icon: rex-icon rex-icon-info
+          subpages:
+              info: { title: 'Info'}
+          #   moduluebersicht: { title: 'translate:moduluebersicht'}
+          #   templateuebersicht: { title: 'translate:templateuebersicht'}
+              changelog: { title: 'translate:changelog'}
+              license: { title: 'translate:license'}
+        module:
+          title: 'translate:module'
+          icon: rex-icon rex-icon-module
+        templates:
+          title: 'translate:templates'
+          icon: rex-icon rex-icon-template
+        snippets:
+          title: 'translate:snippets'
+          icon: rex-icon fa-cut
+

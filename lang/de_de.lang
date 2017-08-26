@@ -1,0 +1,56 @@
+bootstrap_title = Bootstrap
+perm_general_bootstrap[] = Rechte für bootstrap-Addon
+
+
+bootstrap_module              = Module
+
+bootstrap_modul               = Modul
+bootstrap_moduluebersicht     = Modulübersicht
+bootstrap_config_fehler       = config.inc nicht vorhanden in:
+bootstrap_info_fehler         = info.inc nicht vorhanden in:
+bootstrap_input_fehler        = input.inc nicht vorhanden in:
+bootstrap_output_fehler       = output.inc nicht vorhanden in:
+bootstrap_template_fehler     = template.inc nicht vorhanden in:
+
+bootstrap_fertig              = Fertig
+bootstrap_in_bearbeitung      = In Bearbeitung
+bootstrap_entwicklung_geplant = Entwicklung geplant
+bootstrap_input               = Input
+bootstrap_output              = Output
+bootstrap_acc_template        = Template
+
+bootstrap_css                   = CSS
+bootstrap_scss                  = SCSS
+
+bootstrap_snippets             = Snippets
+
+bootstrap_info                  = Info
+bootstrap_styles                = Styles
+bootstrap_modul_installieren    = Modul installieren
+bootstrap_template_installieren = Template installieren
+
+bootstrap_modul_angelegt        = Folgendes Modul wurde angelegt:
+bootstrap_modulname_fehler      = Bitte einen Modulnamen angeben!
+
+bootstrap_template_angelegt     = Folgendes Template wurde angelegt:
+bootstrap_templatename_fehler   = Bitte einen Templatenamen angeben!
+
+bootstrap_kopierter_ordner      = Folgender Ordner wurde in den Assets Ordner kopiert:
+
+bootstrap_templates = Templates
+bootstrap_template  = Template
+bootstrap_templateuebersicht     = Templateübersicht
+bootstrap_template_id            = Template ID
+bootstrap_template_bezeichnung   = Template Bezeichnung
+bootstrap_template_verwendung    = Verwendung
+bootstrap_template_benutzung     = Aktuelle Templatebenutzung
+
+bootstrap_changelog = Changelog
+bootstrap_license = Lizenz
+
+bootstrap_modul_id            = Modul ID
+bootstrap_modul_bezeichnung   = Modul Bezeichnung
+bootstrap_modul_verwendung    = Verwendung
+bootstrap_modul_benutzung     = Aktuelle Modulbenutzung
+bootstrap_module_loeschen     = Unbenutze Module löschen
+bootstrap_modul_geloescht     = Modul gelöscht: ID

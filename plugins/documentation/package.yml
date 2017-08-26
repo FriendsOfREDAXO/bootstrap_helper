@@ -1,0 +1,17 @@
+package: bootstrap/documentation
+version: '0.1'
+author: 'Friends Of REDAXO'
+supportpage: github.com/FriendsOfREDAXO/dummy_documentation
+
+documentationlang: 'de_de'
+defaultnavi: 'main_navi.md'
+defaultintro: 'main_intro.md'
+
+page:
+    title: 'translate:documentation_menu_entry'
+    icon: rex-icon fa-book
+    itemclass: 'pull-right'
+    perm: admin[]
+
+
+
