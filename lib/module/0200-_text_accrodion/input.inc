@@ -1,8 +1,9 @@
 <?php
 
   // Textarea
+  $items_textarea = rex_var::toArray("REX_VALUE[1]");
   $textarea = new rex_fragment();
-  $textarea->setVar('content_textarea','REX_VALUE[1]');
+  $textarea->setVar('content_textarea',$items_textarea);
 
   // Accordion
   $items_accordion = rex_var::toArray("REX_VALUE[2]");
@@ -30,7 +31,3 @@ if(rex_addon::get('mform')->isAvailable() && rex_addon::get('mblock')->isAvailab
 } else {
     echo '<div style="padding:15px; color: #fff;" class="bg-danger">Diese Modul benötigt zwingend die AddOns <strong>mForm</strong> und <strong>mBlock</strong>!</div>';
 }
-
-
-
-

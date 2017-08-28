@@ -17,6 +17,9 @@ page:
               info: { title: 'Info'}
           #   moduluebersicht: { title: 'translate:moduluebersicht'}
           #   templateuebersicht: { title: 'translate:templateuebersicht'}
+              roadmap:
+                title: 'translate:roadmap'
+                icon: rex-icon fa-road
               changelog: { title: 'translate:changelog'}
               license: { title: 'translate:license'}
         module:
@@ -28,4 +31,5 @@ page:
         snippets:
           title: 'translate:snippets'
           icon: rex-icon fa-cut
+
 

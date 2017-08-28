@@ -23,6 +23,8 @@ bootstrap_css                   = CSS
 bootstrap_scss                  = SCSS
 
 bootstrap_snippets             = Snippets
+bootstrap_roadmap              = Roadmap
+
 
 bootstrap_info                  = Info
 bootstrap_styles                = Styles

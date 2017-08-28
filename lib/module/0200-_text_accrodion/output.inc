@@ -1,7 +1,8 @@
 <?php
 
+  $items_textarea   = rex_var::toArray("REX_VALUE[1]");
   $textarea         = new rex_fragment();
-  $textarea->setVar('content_textarea', 'REX_VALUE[1]');
+  $textarea->setVar('content_textarea', $items_textarea);
 
   $items_accordion   = rex_var::toArray("REX_VALUE[2]");
   $accordion         = new rex_fragment();
