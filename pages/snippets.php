@@ -9,4 +9,4 @@ $fragment = new rex_fragment();
 $fragment->setVar('class', 'info', false);
 $fragment->setVar('title', $this->i18n('bootstrap_snippets'), false);
 $fragment->setVar('body', $content, false);
-echo $fragment->parse('core/page/section.php');
+echo '<div id="bootstrap-addon-wrapper">'.$fragment->parse('core/page/section.php').'</div>';

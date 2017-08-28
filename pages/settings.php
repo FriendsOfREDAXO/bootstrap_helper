@@ -40,7 +40,7 @@ $fragment = new rex_fragment();
 $fragment->setVar('class', 'edit');
 $fragment->setVar('title', $this->i18n('headsupgrid_settings'));
 $fragment->setVar('body', $content, false);
-echo $fragment->parse('core/page/section.php');
+echo '<div id="bootstrap-addon-wrapper">'.$fragment->parse('core/page/section.php').'</div>';
 
 
 ?>

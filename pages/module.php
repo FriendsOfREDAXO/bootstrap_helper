@@ -94,17 +94,17 @@ if (count($moduls_errors) > 0) {
   $folder       = '';
   // Status: Fertig
   if ($modul['config']['status'] == 1) {
-    $statusfarbe = ' color: #36404F; ';
+    $statusfarbe = ' color: #563D7C; ';
     $statusinfo = $this->i18n('fertig');
   }
   // Status: in Bearbeitung
   if ($modul['config']['status'] == 2) {
-    $statusfarbe = ' color: #6999D7; ';
+    $statusfarbe = ' color: #CDC1E2; ';
     $statusinfo = $this->i18n('in_bearbeitung');
   }
   // Status: geplant
   if ($modul['config']['status'] == 0) {
-    $statusfarbe = ' color: #BF5E52; ';
+    $statusfarbe = ' color: #E5E1EA; ';
     $statusinfo = $this->i18n('entwicklung_geplant');
   }
 
@@ -205,13 +205,13 @@ if (count($moduls_errors) > 0) {
     }
   }
 $content = '
-<div id="modulsammlung">
+<div id="bootstrap">
   <div class="row">
     <table class="table table-striped table-hover">
       <thead>
         <tr>
           <th class="rex-table-icon"></th>
-          <th class="td_title">'.$this->i18n('module').'</th>
+          <th class="td_title"></th>
           <th class="td_info"></th>
           <th class="td_scss"></th>
           <th class="td_install"></th>
@@ -229,5 +229,7 @@ $content .= '
 </div>';
 
 $fragment = new rex_fragment();
+$fragment->setVar('class', 'info', false);
+$fragment->setVar('title', $this->i18n('bootstrap_module'), false);
 $fragment->setVar('body', $content, false);
-echo $fragment->parse('core/page/section.php');
+echo '<div id="bootstrap-addon-wrapper">'.$fragment->parse('core/page/section.php').'</div>';

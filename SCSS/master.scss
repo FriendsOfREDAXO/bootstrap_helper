@@ -1,41 +1,137 @@
+$bootstrap_brand_1: #563D7C;
+$bootstrap_brand_2: #CDC1E2;
+$bootstrap_brand_3: #E5E1EA;
+$bootstrap_brand_4: #F9F9F9;
 
-// Tabelle
-#modulsammlung {
-  table {
-    margin: 0;
-    thead {
-      border: none;
-    }
-    tbody {
-      border: none;
-    }
-    .td_title {
-      width: 100%;
-    }
-  }
-
-}
-
-#modulsammlung {
-  .rex-nav-pagination {
-    font-size: 10px;
-    padding: 10px;
-    ul {
-      font-size: 10px;
-      li {
-        a {
-          padding: 6px 8px 6px 8px;
+body[id^="rex-page-bootstrap"] {
+    .page-header {
+        h1 {
+            color: $bootstrap_brand_1;
         }
-      }
     }
-  }
+    .rex-page-nav {
+        li {
+            a {
+                color: $bootstrap_brand_1 !important;
+                i {
+                    margin-right: 3px;
+                }
+                &:hover {
+                    color: #000 !important;
+                    border-top-color: $bootstrap_brand_1 !important;
+                }
+            }
+            &.active {
+                a {
+                    color: #fff !important;
+                    background: $bootstrap_brand_1 !important;
+                    border-color: $bootstrap_brand_1 !important;
+                }
+            }
+        }
+        .navbar {
+            li {
+                a {
+                    color: #ACB0B5!important;
+                    i {
+                        margin-right: 3px;
+                    }
+                    &:hover {
+                        color: #000 !important;
+                    }
+                }
+                &.active {
+                    a {
+                        background: #fff !important;
+                        color: #563D7C !important;
+                    }
+                }
+            }
+        }
+    }
 }
 
-.accordiontitle {
-  font-weight: bold;
-  margin: 10px 0 0 0;
-  font-size: 11px;
-  padding: 3px 0 3px 15px;
-  width: 100%;
-  background: #ccc;
+#bootstrap-addon-wrapper {
+    table {
+        margin: 0;
+
+
+        thead {}
+
+
+        tbody {
+            border: none !important;
+        }
+
+
+        .td_title {
+            width: 100%;
+        }
+
+
+
+        tr:hover {
+            background: $bootstrap_brand_4;
+        }
+    }
+
+    .panel {
+        border: 1px solid #563D7C;
+    }
+
+    .panel-heading {
+        background: #563D7C;
+        border-bottom: none !important;
+    }
+
+    .panel-title {
+        color: #fff;
+    }
+
+    h2 {
+        color: $bootstrap_brand_1;
+    }
+
+    a {
+        color: #563D7C;
+    }
+    .btn-success {
+        background: $bootstrap_brand_3;
+        border-color: $bootstrap_brand_2;
+        color: $bootstrap_brand_1;
+        &:hover {
+            border-color: $bootstrap_brand_1;
+        }
+    }
+    .btn-primary {
+        background: #563D7C;
+        margin-right: 8px !important;
+        &:hover {
+            color: #563D7C;
+            background: $bootstrap_brand_3;
+        }
+    }
+
+    .rex-nav-pagination {
+        font-size: 10px;
+        padding: 10px;
+        ul {
+            font-size: 10px;
+            li {
+                a {
+                    padding: 6px 8px 6px 8px;
+                }
+            }
+        }
+    }
+
+    .accordiontitle {
+        font-weight: bold;
+        margin: 10px 0 0 0;
+        font-size: 11px;
+        padding: 3px 0 3px 15px;
+        width: 100%;
+        color: #fff;
+        background: $bootstrap_brand_1 !important;
+    }
 }
