@@ -7,6 +7,9 @@ ACHTUNG: DAS HIER IST EINE ABSOLUTE APLHA-VERSION!!
 
 ---
 
+
+
+
 Dieses AddOn stellt Bootstrap 4 kompatible Templates, Module und Fragmente bereit. Ziel ist es mit nur wenigen Klicks eine Standard Bootstrap Seite erstellen zu können. **Vorraussetzung** (für die Moduleingaben) sind die AddOns **mForm** und **mBlock**.
 
 Weitere Informationen finden sich in der Dokumentation (Plugin installieren).
@@ -30,4 +33,6 @@ __
 
 ### Credits ###
 
-[REDAXO](https://redaxo.org), [Friends Of REDAXO](https://friendsofredaxo.github.io), [Bootstrap](https://getbootstrap.com)
+* [REDAXO :-)](https://redaxo.org)
+* [MForm](https://github.com/FriendsOfREDAXO/mform)
+* [MBlock](https://github.com/FriendsOfREDAXO/mblock)

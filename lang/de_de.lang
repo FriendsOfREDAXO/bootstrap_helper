@@ -22,6 +22,7 @@ bootstrap_acc_template        = Template
 bootstrap_css                   = CSS
 bootstrap_scss                  = SCSS
 
+bootstrap_general              = Allgemeines
 bootstrap_snippets             = Snippets
 bootstrap_roadmap              = Roadmap
 
