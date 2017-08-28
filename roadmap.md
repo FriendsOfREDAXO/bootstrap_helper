@@ -23,6 +23,8 @@
 
 - Backend (S)CSS
 - Grid Auswahl in allen Modulen
+- Entschediung: Frontend Flexbox oder nicht?
+- Entscheidung: Wie Frontend CSS / JS einbinden / verwalten?
 - Drag and Drop der Tabs in den Modulen
 - Template
   - Starter Templates
