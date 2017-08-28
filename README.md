@@ -30,6 +30,4 @@ __
 
 ### Credits ###
 
-* [REDAXO :-)](https://redaxo.org)
-* [MForm](https://github.com/FriendsOfREDAXO/mform)
-* [MBlock](https://github.com/FriendsOfREDAXO/mblock)
+[REDAXO](https://redaxo.org), [Friends Of REDAXO](https://friendsofredaxo.github.io), [Bootstrap](https://getbootstrap.com)
