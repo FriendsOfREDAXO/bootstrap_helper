@@ -1,0 +1,8 @@
+name: '0020 - Social Media Sharing Icons'
+active: false
+attributes:
+    ctype: {  }
+    modules:
+        1: { all: '1' }
+    categories:
+        all: '1'

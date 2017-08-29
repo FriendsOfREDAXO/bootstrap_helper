@@ -10,6 +10,9 @@
   - [ ] EWS Modul
 - Fragemente
   - [ ] ??
+
+---
+
 **Version 1**
 
 - Templates
@@ -40,6 +43,7 @@
 - Template
   - [ ] Starter Template
 - Module
+  - [ ] Text
   - [ ] Text / Accordion
 - Fragemente
   - [ ] Text
