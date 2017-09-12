@@ -1,6 +1,6 @@
 <?php
 
-// Test
+// Test gujtzjutzj
 
 $this->setProperty('author', 'Friends Of REDAXO');
 
