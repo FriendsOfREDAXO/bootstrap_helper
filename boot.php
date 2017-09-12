@@ -1,5 +1,7 @@
 <?php
 
+// Test gujtzjutzj
+
 $this->setProperty('author', 'Friends Of REDAXO');
 
 if (rex::isBackend() && rex::getUser()) {
@@ -21,3 +23,4 @@ if (rex::isBackend() && rex::getUser()) {
   rex_view::addCssFile($this->getAssetsUrl('css/styles.css'));
 }
 
+// Test
