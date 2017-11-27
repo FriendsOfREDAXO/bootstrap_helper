@@ -21,9 +21,8 @@
   - [ ] Bootrstrap Standard Beispiele
   - [ ] Routenplaner (Google Maps)
   - [ ] SEO Sitemap
-  - [ ] Abstand mit / ohne Trennlinie
+  - [ ] Abstand mit / ohne Trennlinie (+ Bild)
   - [ ] Text / Download
-  - [ ] Text / Bild
 - Fragemente
   - [ ] Download
   - [ ] Bild
@@ -34,20 +33,29 @@
 
 ---
 
-**Version 0.5 - public alpha**
+**Version 0.5 // public alpha**
 
 - [ ] Backend (S)CSS (Module)
-- [ ] Grid Auswahl in allen Modulen
-- [ ] Drag and Drop der Tabs in den Modulen
-- [ ] REX_VALUES -> dynamisch?
+- "Modulcontainer" entwicklen
+    - [ ] Grid Auswahl in allen Modulen
+    - [x] Angabe von ID / Klassen
+    - [ ] Drag and Drop der Tabs in den Modulen
+        - [x] Reihenfolge Counter: Problem fixen
 - Template
   - [ ] Starter Template
 - Module
-  - [ ] Text
+  - [ ] Überschrift + Text
+     - [ ] Überschrift mit Auswahl (H1-H6)
   - [ ] Text / Accordion
-- Fragemente
+  - [ ] Text / Bild
+    - [ ] freie Angabe von MediaManager Typen
+- Funktionen
+  - [ ] ID / Klassen
+  - [ ] Überschrift
   - [ ] Text
-  - [ ] Accrodion
+  - [ ] Accordion
+  - [ ] Bild
+- [ ] Funktionen auslagern (aus boot.php)
 - [ ] Doku erweitern
 - [x] Addon (S)CSS :-)
 

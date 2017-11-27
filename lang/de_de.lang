@@ -1,5 +1,5 @@
 bootstrap_title = Bootstrap
-perm_general_bootstrap[] = Rechte für bootstrap-Addon
+perm_general_bootstrap[] = Rechte für Bootstrap-Addon
 
 
 bootstrap_module              = Module
