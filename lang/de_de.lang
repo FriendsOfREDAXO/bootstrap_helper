@@ -1,59 +1,59 @@
-bootstrap_title = Bootstrap
-perm_general_bootstrap[] = Rechte für Bootstrap-Addon
+bootstrap_helper_title                    = Bootstrap Helper
+perm_general_bootstrap[]                  = Rechte für Bootstrap Helper Addon
 
 
-bootstrap_module              = Module
+bootstrap_helper_module                   = Module
 
-bootstrap_modul               = Modul
-bootstrap_moduluebersicht     = Modulübersicht
-bootstrap_config_fehler       = config.inc nicht vorhanden in:
-bootstrap_info_fehler         = info.inc nicht vorhanden in:
-bootstrap_input_fehler        = input.inc nicht vorhanden in:
-bootstrap_output_fehler       = output.inc nicht vorhanden in:
-bootstrap_template_fehler     = template.inc nicht vorhanden in:
+bootstrap_helper_modul                    = Modul
+bootstrap_helper_moduluebersicht          = Modulübersicht
+bootstrap_helper_config_fehler            = config.inc nicht vorhanden in:
+bootstrap_helper_info_fehler              = info.inc nicht vorhanden in:
+bootstrap_helper_input_fehler             = input.inc nicht vorhanden in:
+bootstrap_helper_output_fehler            = output.inc nicht vorhanden in:
+bootstrap_helper_template_fehler          = template.inc nicht vorhanden in:
 
-bootstrap_fertig              = Fertig
-bootstrap_in_bearbeitung      = In Bearbeitung
-bootstrap_entwicklung_geplant = Entwicklung geplant
-bootstrap_input               = Input
-bootstrap_output              = Output
-bootstrap_acc_template        = Template
+bootstrap_helper_fertig                   = Fertig
+bootstrap_helper_in_bearbeitung           = In Bearbeitung
+bootstrap_helper_entwicklung_geplant      = Entwicklung geplant
+bootstrap_helper_input                    = Input
+bootstrap_helper_output                   = Output
+bootstrap_helper_acc_template             = Template
 
-bootstrap_css                   = CSS
-bootstrap_scss                  = SCSS
+bootstrap_helper_css                      = CSS
+bootstrap_helper_scss                     = SCSS
 
-bootstrap_general              = Allgemeines
-bootstrap_snippets             = Snippets
-bootstrap_roadmap              = Roadmap
+bootstrap_helper_general                  = Allgemeines
+bootstrap_helper_snippets                 = Snippets
+bootstrap_helper_roadmap                  = Roadmap
 
 
-bootstrap_info                  = Info
-bootstrap_styles                = Styles
-bootstrap_modul_installieren    = Modul installieren
-bootstrap_template_installieren = Template installieren
+bootstrap_helper_info                     = Info
+bootstrap_helper_styles                   = Styles
+bootstrap_helper_modul_installieren       = Modul installieren
+bootstrap_helper_template_installieren    = Template installieren
 
-bootstrap_modul_angelegt        = Folgendes Modul wurde angelegt:
-bootstrap_modulname_fehler      = Bitte einen Modulnamen angeben!
+bootstrap_helper_modul_angelegt           = Folgendes Modul wurde angelegt:
+bootstrap_helper_modulname_fehler         = Bitte einen Modulnamen angeben!
 
-bootstrap_template_angelegt     = Folgendes Template wurde angelegt:
-bootstrap_templatename_fehler   = Bitte einen Templatenamen angeben!
+bootstrap_helper_template_angelegt        = Folgendes Template wurde angelegt:
+bootstrap_helper_templatename_fehler      = Bitte einen Templatenamen angeben!
 
-bootstrap_kopierter_ordner      = Folgender Ordner wurde in den Assets Ordner kopiert:
+bootstrap_helper_kopierter_ordner         = Folgender Ordner wurde in den Assets Ordner kopiert:
 
-bootstrap_templates = Templates
-bootstrap_template  = Template
-bootstrap_templateuebersicht     = Templateübersicht
-bootstrap_template_id            = Template ID
-bootstrap_template_bezeichnung   = Template Bezeichnung
-bootstrap_template_verwendung    = Verwendung
-bootstrap_template_benutzung     = Aktuelle Templatebenutzung
+bootstrap_helper_templates = Templates
+bootstrap_helper_template  = Template
+bootstrap_helper_templateuebersicht       = Templateübersicht
+bootstrap_helper_template_id              = Template ID
+bootstrap_helper_template_bezeichnung     = Template Bezeichnung
+bootstrap_helper_template_verwendung      = Verwendung
+bootstrap_helper_template_benutzung       = Aktuelle Templatebenutzung
 
-bootstrap_changelog = Changelog
-bootstrap_license = Lizenz
+bootstrap_helper_changelog                = Changelog
+bootstrap_helper_license                  = Lizenz
 
-bootstrap_modul_id            = Modul ID
-bootstrap_modul_bezeichnung   = Modul Bezeichnung
-bootstrap_modul_verwendung    = Verwendung
-bootstrap_modul_benutzung     = Aktuelle Modulbenutzung
-bootstrap_module_loeschen     = Unbenutze Module löschen
-bootstrap_modul_geloescht     = Modul gelöscht: ID
+bootstrap_helper_modul_id                 = Modul ID
+bootstrap_helper_modul_bezeichnung        = Modul Bezeichnung
+bootstrap_helper_modul_verwendung         = Verwendung
+bootstrap_helper_modul_benutzung          = Aktuelle Modulbenutzung
+bootstrap_helper_module_loeschen          = Unbenutze Module löschen
+bootstrap_helper_modul_geloescht          = Modul gelöscht: ID

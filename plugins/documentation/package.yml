@@ -1,4 +1,4 @@
-package: bootstrap/documentation
+package: bootstrap_helper/documentation
 version: '0.1'
 author: 'Friends Of REDAXO'
 supportpage: github.com/FriendsOfREDAXO/dummy_documentation

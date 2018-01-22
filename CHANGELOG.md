@@ -1,5 +1,10 @@
 ### Changelog ###
 
+---
+
+### Version 0.1.5.1 // 2.1.2018
+
+- Name geändert
 
 ---
 

@@ -1,6 +1,6 @@
 <?php
 
-$dir = '../redaxo/src/addons/bootstrap/lib/templates';
+$dir = '../redaxo/src/addons/bootstrap_helper/lib/templates';
 $modulesdirs = glob($dir.'/*',GLOB_ONLYDIR);
 
 $templates = array();
@@ -206,7 +206,7 @@ if (count($templates_errors) > 0) {
  }
 }
 $content = '
-<div id="bootstrap">
+<div id="bootstrap_helper">
   <div class="row">
     <table class="table table-striped table-hover">
       <thead>
@@ -232,6 +232,6 @@ $content .= '
 
 $fragment = new rex_fragment();
 $fragment->setVar('class', 'info', false);
-$fragment->setVar('title', $this->i18n('bootstrap_templates'), false);
+$fragment->setVar('title', $this->i18n('bootstrap_helper_templates'), false);
 $fragment->setVar('body', $content, false);
 echo '<div id="bootstrap-addon-wrapper">'.$fragment->parse('core/page/section.php').'</div>';

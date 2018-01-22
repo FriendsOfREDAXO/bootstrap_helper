@@ -1,13 +1,13 @@
-package: bootstrap
-version: '0.1.5'
+package: bootstrap_helper
+version: '0.1.5.1'
 author: 'Friends Of REDAXO'
-supportpage: https://github.com/FriendsOfREDAXO/bootstrap/issues
+supportpage: https://github.com/FriendsOfREDAXO/bootstrap_helper/issues
 info: 'Idee und Realisierung der ersten Version: Oliver Kreischer / concedra.de'
 compile: 0
 
 page:
     title: 'translate:title'
-    perm: bootstrap[]
+    perm: bootstrap_helper[]
     icon: rex-icon fa-bold
     subpages:
         info:

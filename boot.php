@@ -2,7 +2,7 @@
 $this->setProperty( 'author', 'Friends Of REDAXO' );
 
 if ( rex::isBackend() && rex::getUser() ) {
-	rex_perm::register( 'bootstrap[]' );
+	rex_perm::register( 'bootstrap_helper[]' );
 
 ////////////////////////////////////
 //
@@ -40,13 +40,13 @@ if ( ! function_exists( 'bs_check_editor' ) ) {
 			if ( rex_addon::get( 'markitup' )->isAvailable() ) {
 				$return = 'markitup';
 				if ( ! markitup::profileExists( 'simple' ) ) {
-					markitup::insertProfile( 'simple', 'Angelegt durch das Addon Bootstrap', 'textile', 200, 800, 'relative', 'bold,italic,underline,deleted,quote,sub,sup,code,unorderedlist, orderedlist, grouplink[internal|external|mailto]' );
+					markitup::insertProfile( 'simple', 'Angelegt durch das Addon Bootstrap Helper', 'textile', 200, 800, 'relative', 'bold,italic,underline,deleted,quote,sub,sup,code,unorderedlist, orderedlist, grouplink[internal|external|mailto]' );
 				}
 			}
 			if ( rex_addon::get( 'rex_redactor2' )->isAvailable() ) {
 				$return = 'redactor';
 				if ( ! rex_redactor2::profileExists( 'simple' ) ) {
-					rex_redactor2::insertProfile( 'simple', 'Angelegt durch das Addon Bootstrap', '200', '800', 'relative', 'bold, italic, underline, deleted, quote, sub, sup, code, unorderedlist, orderedlist, grouplink[external|internal|email], cleaner' );
+					rex_redactor2::insertProfile( 'simple', 'Angelegt durch das Addon Bootstrap Helper', '200', '800', 'relative', 'bold, italic, underline, deleted, quote, sub, sup, code, unorderedlist, orderedlist, grouplink[external|internal|email], cleaner' );
 				}
 			}
 
@@ -96,8 +96,8 @@ function container_output( $container ) {
 	}
 }
 
-require_once (rex_path::addon('bootstrap','functions/headline.php'));
-require_once (rex_path::addon('bootstrap','functions/textarea.php'));
+require_once (rex_path::addon('bootstrap_helper','functions/headline.php'));
+require_once (rex_path::addon('bootstrap_helper','functions/textarea.php'));
 
 
 

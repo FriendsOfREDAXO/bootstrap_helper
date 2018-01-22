@@ -3,7 +3,7 @@ $bootstrap_brand_2: #CDC1E2;
 $bootstrap_brand_3: #E5E1EA;
 $bootstrap_brand_4: #F9F9F9;
 
-body[id^="rex-page-bootstrap"] {
+body[id^="rex-page-bootstrap-helper"] {
   .page-header {
     h1 {
       color: $bootstrap_brand_1;
@@ -51,7 +51,7 @@ body[id^="rex-page-bootstrap"] {
   }
 }
 
-#bootstrap-addon-wrapper {
+#bootstrap-helper-addon-wrapper {
   table {
     margin: 0;
     thead {
@@ -129,47 +129,47 @@ body[id^="rex-page-bootstrap"] {
 }
 
 // Module
-#bootstrap_modul_wrapper #tabs i {
+#bootstrap_helper_modul_wrapper #tabs i {
   display: none;
 }
 
-#bootstrap_modul_wrapper #tabs span {
+#bootstrap_helper_modul_wrapper #tabs span {
   display: inline-block;
 }
 
 @media (max-width: 767px) {
-  #bootstrap_modul_wrapper #tabs i {
+  #bootstrap_helper_modul_wrapper #tabs i {
     display: inline-block;
     font-style: normal;
     padding: 0 5px 0 5px;
     font-size: 16px;
   }
-  #bootstrap_modul_wrapper #tabs span {
+  #bootstrap_helper_modul_wrapper #tabs span {
     display: none;
   }
-  #bootstrap_modul_wrapper .control-label {
+  #bootstrap_helper_modul_wrapper .control-label {
     margin-left: 10px;
   }
 
-  #bootstrap_modul_wrapper #anleitung p {
+  #bootstrap_helper_modul_wrapper #anleitung p {
     padding-left: 20px;
   }
 
-  #bootstrap_modul_wrapper #anleitung .control-label {
+  #bootstrap_helper_modul_wrapper #anleitung .control-label {
     padding-left: 25px;
   }
 
 }
 
-#bootstrap_modul_wrapper #anleitung .control-label {
+#bootstrap_helper_modul_wrapper #anleitung .control-label {
   margin-top: -6px;
 }
 
-#bootstrap_modul_wrapper #anleitung {
+#bootstrap_helper_modul_wrapper #anleitung {
   margin-top: 20px;
 }
 
-#bootstrap_modul_wrapper #anleitung .panel-heading {
+#bootstrap_helper_modul_wrapper #anleitung .panel-heading {
   font-size: 14px !important;
   padding: 10px;
   background: #DFE3E9;
@@ -179,15 +179,15 @@ body[id^="rex-page-bootstrap"] {
   border: none;
 }
 
-#bootstrap_modul_wrapper #anleitung .panel-heading span {
+#bootstrap_helper_modul_wrapper #anleitung .panel-heading span {
   margin-right: 5px;
 }
 
-#bootstrap_modul_wrapper #anleitung .panel-heading:hover {
+#bootstrap_helper_modul_wrapper #anleitung .panel-heading:hover {
   color: #000;
 }
 
-#bootstrap_modul_wrapper .nav-tabs > li > a {
+#bootstrap_helper_modul_wrapper .nav-tabs > li > a {
   color: #31404F;
   background-color: #DFE3E9;
   font-size: 12px;
@@ -201,25 +201,25 @@ body[id^="rex-page-bootstrap"] {
   padding-top: 10px;
 }
 
-#bootstrap_modul_wrapper .nav-tabs > li.active > a, #bootstrap_modul_wrapper .nav-tabs > li.active > a:hover, #bootstrap_modul_wrapper .nav-tabs > li.active > a:focus {
+#bootstrap_helper_modul_wrapper .nav-tabs > li.active > a, #bootstrap_helper_modul_wrapper .nav-tabs > li.active > a:hover, #bootstrap_helper_modul_wrapper .nav-tabs > li.active > a:focus {
   color: #31404F;
   background-color: #f5f5f5;
   height: 39px;
 }
 
-#bootstrap_modul_wrapper .ui-sortable-helper {
+#bootstrap_helper_wrapper .ui-sortable-helper {
 }
 
-#bootstrap_modul_wrapper .nav-tabs > li > a:hover {
+#bootstrap_helper_modul_wrapper .nav-tabs > li > a:hover {
   background-color: #fafafa;
   border-bottom: none;
 }
 
-#bootstrap_modul_wrapper .markitup {
+#bootstrap_helper_modul_wrapper .markitup {
   min-height: 200px;
 }
 
-#bootstrap_modul_wrapper .tab-content {
+#bootstrap_helper_modul_wrapper .tab-content {
   background: #f5f5f5;
   margin-top: -20px;
   padding: 10px 10px 0 10px;
@@ -228,7 +228,7 @@ body[id^="rex-page-bootstrap"] {
   border-bottom: 1px solid #9da6b2;
 }
 
-#bootstrap_modul_wrapper .tab-content h3 {
+#bootstrap_helper_modul_wrapper .tab-content h3 {
   font-size: 14px !important;
   padding: 10px;
   background: #DFE3E9;
@@ -236,47 +236,47 @@ body[id^="rex-page-bootstrap"] {
   margin-bottom: 20px;
 }
 
-#bootstrap_modul_wrapper .tab-content .control-label {
+#bootstrap_helper_modul_wrapper .tab-content .control-label {
   font-weight: normal;
   font-size: 12px !important;
 }
 
-#bootstrap_modul_wrapper input.form-control,
-#bootstrap_modul_wrapper textarea.form-control {
+#bootstrap_helper_modul_wrapper input.form-control,
+#bootstrap_helper_modul_wrapper textarea.form-control {
   background: #fff;
 }
 
-#bootstrap_modul_wrapper .grid {
+#bootstrap_helper_modul_wrapper .grid {
   text-align: right;
 }
 
-#bootstrap_modul_wrapper .grid input {
+#bootstrap_helper_modul_wrapper .grid input {
   display: none;
 }
 
-#bootstrap_modul_wrapper .grid label {
+#bootstrap_helper_wrapper .grid label {
 }
 
 .grid label div,
-#bootstrap_modul_wrapper .gridimage,
-#bootstrap_grid .gridimage {
+#bootstrap_helper_wrapper .gridimage,
+#bootstrap_helper_grid .gridimage {
   float: left;
   width: 340px;
   height: 60px;
   border: 1px solid #ccc;
 }
 
-#bootstrap_modul_wrapper .grid label:hover div {
+#bootstrap_helper_wrapper .grid label:hover div {
   cursor: pointer;
   border: 1px solid #659CCE;
 }
 
-#bootstrap_modul_wrapper .grid :checked + div {
+#bootstrap_helper_wrapper .grid :checked + div {
   border: 1px solid #737373 !important;
 }
 
-#bootstrap_modul_wrapper,
-#bootstrap_grid {
+#bootstrap_helper_wrapper,
+#bootstrap_helper_grid {
   .img12 {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVQAAAA8CAIAAAC2INVhAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAQ9JREFUeNrs3TEKgzAYgNFagpuDBxC8/3HcBVcRXAQRQVJPYIcWapr3BpdAhh8+IoikiDE+gPw8jQDED4gfED8gfkD8gPgB8QPiB+4tXC8vy2JGkKiqqpz8gPgB8YP4AfED4gfED4gfED8gfkD8gPgB8QN/Gv84jsMwGCjkFf9xHH3fix8SEj7fYl3Xs/x9300TMoq/67p5ns0Rsou/ruuyLM/X/mmaTBMyir9pmvO5bZv4IS0+9YH4AfED4gfED/yR8J1dQmjb1jQhIUWM8WLZjT2QLjf2AOIHxA/iB8QPiB8QPyB+QPyA+AHxA+IHxA/czpu/+gAnPyB+QPyA+AHxA+IHxA+IHxA/8BMvAQYAX1c3Eu5IAT8AAAAASUVORK5CYII=);
   }
@@ -370,7 +370,7 @@ body[id^="rex-page-bootstrap"] {
     }
   }
 }
-#bootstrap_modul_wrapper {
+#bootstrap_helper_wrapper {
   .mform fieldset {
     margin-top: 22px;
     legend {
@@ -455,7 +455,7 @@ body[id^="rex-page-bootstrap"] {
 
 //**/
 
-#bootstrap_modul_wrapper {
+#bootstrap_helper_wrapper {
   .mblock_wrapper {
     margin: auto;
     padding: 0
