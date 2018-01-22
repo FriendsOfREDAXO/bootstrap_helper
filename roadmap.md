@@ -44,11 +44,12 @@
 - Template
   - [ ] Starter Template
 - Module
-  - [ ] Überschrift + Text
-     - [ ] Überschrift mit Auswahl (H1-H6)
-  - [ ] Text / Accordion
-  - [ ] Text / Bild
-    - [ ] freie Angabe von MediaManager Typen
+  - [ ] Standard-Modul
+     - [X] Überschrift mit Auswahl (H1-H6)
+     - [X] Text
+     - [ ] Text / Accordion
+     - [ ] Text / Bild
+     - [ ] freie Angabe von MediaManager Typen
 - Funktionen
   - [ ] ID / Klassen
   - [ ] Überschrift

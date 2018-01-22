@@ -1,5 +1,5 @@
 package: bootstrap
-version: '0.1.4'
+version: '0.1.5'
 author: 'Friends Of REDAXO'
 supportpage: https://github.com/FriendsOfREDAXO/bootstrap/issues
 info: 'Idee und Realisierung der ersten Version: Oliver Kreischer / concedra.de'

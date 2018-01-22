@@ -14,55 +14,55 @@ echo '
     <div id="tabs">
       <ul class="nav nav-tabs">';
 if ( 'REX_VALUE[19]' ) {
-	$reihenfolgeneu = explode( ',', 'REX_VALUE[19]' );
-	for ( $i = 1; $i <= count( $values ); $i ++ ) {
-		echo '<li id="' . ( $reihenfolgeneu[ ( $i - 1 ) ] ) . '" ><a data-toggle="tab" id="tab' . ( $reihenfolgeneu[ ( $i - 1 ) ] ) . '" href="#bereich' . ( $reihenfolgeneu[ ( $i - 1 ) ] ) . '"><i>B' . $i . '</i><span>Bereich ' . $i . '</span></a></li>';
-	}
+    $reihenfolgeneu = explode( ',', 'REX_VALUE[19]' );
+    for ( $i = 1; $i <= count( $values ); $i ++ ) {
+        echo '<li id="' . ( $reihenfolgeneu[ ( $i - 1 ) ] ) . '" ><a data-toggle="tab" id="tab' . ( $reihenfolgeneu[ ( $i - 1 ) ] ) . '" href="#bereich' . ( $reihenfolgeneu[ ( $i - 1 ) ] ) . '"><i>B' . $i . '</i><span>Bereich ' . $i . '</span></a></li>';
+    }
 } else {
-	for ( $i = 1; $i <= count( $values ); $i ++ ) {
-		echo '<li id="' . $i . '"><a data-toggle="tab" id="tab' . $i . '" href="#bereich' . $i . '"><i>B' . $i . '</i><span>Bereich ' . $i . '</span></a></li>';
-	}
+    for ( $i = 1; $i <= count( $values ); $i ++ ) {
+        echo '<li id="' . $i . '"><a data-toggle="tab" id="tab' . $i . '" href="#bereich' . $i . '"><i>B' . $i . '</i><span>Bereich ' . $i . '</span></a></li>';
+    }
 }
 echo '  <li class="locked pull-right"><a data-toggle="tab" id="tabweiteres" href="#einstellungen"><i class="rex-icon rex-icon-metafuncs"></i><span>Einstellungen</span></a></li>
       </ul>
   </div>';
 echo '<div class="tab-content">';
 for ( $i = 1; $i <= count( $values ); $i ++ ) {
-	echo '<div id="bereich' . $i . '" class="tab-pane fade in">';
-	$id    = $i;
-	$mform = new MForm();
-	$mform->addFieldset( 'Element', array( 'class' => 'elemente' ) );
-	$mform->addSelectField( "$id.0.element", array( '0'          => 'Element auswählen',
-	                                                'headline'   => 'Überschrift',
-	                                                'textarea'   => 'Textfeld',
-	                                                'linkbutton' => 'Link / Button'
-	), array( 'label' => '', 'class' => 'elementSelect' ) );
-	element_headline_input( $id, $mform );
-	element_textarea_input( $id, $mform );
-	element_link_button_input( $id, $mform );
-	echo MBlock::show( $id, $mform->show() );
-	echo '<div class="extra_settings">Weitere Einstellungen<i class="fa fa-arrow-down" aria-hidden="true"></i></div>
+    echo '<div id="bereich' . $i . '" class="tab-pane fade in">';
+    $id    = $i;
+    $mform = new MForm();
+    $mform->addFieldset( 'Element', array( 'class' => 'elemente' ) );
+    $mform->addSelectField( "$id.0.element", array( '0'          => 'Element auswählen',
+                                                    'headline'   => 'Überschrift',
+                                                    'textarea'   => 'Textfeld',
+//                                                  'linkbutton' => 'Link / Button'
+    ), array( 'label' => '', 'class' => 'elementSelect' ) );
+    element_headline_input( $id, $mform );
+    element_textarea_input( $id, $mform );
+//  element_link_button_input( $id, $mform );
+    echo MBlock::show( $id, $mform->show() );
+    echo '<div class="extra_settings">Weitere Einstellungen<i class="fa fa-arrow-down" aria-hidden="true"></i></div>
         <div class="extra_settings_content">';
-	id_class_input( $id );
-	media_manager_typ_input( $id );
-	echo '</div>
+    id_class_input( $id );
+    media_manager_typ_input( $id );
+    echo '</div>
   </div>';
 }
 $options = array(
-	'12'      => '<div class="img12"></div>',
-	'6_6'     => '<div class="img6_6"></div>',
-	'4_4_4'   => '<div class="img4_4_4"></div>',
-	'3_3_3_3' => '<div class="img3_3_3_3"></div>',
-	'6_3_3'   => '<div class="img6_3_3"></div>',
-	'3_6_3'   => '<div class="img3_6_3"></div>',
-	'3_3_6'   => '<div class="img3_3_6"></div>',
-	'8_4'     => '<div class="img8_4"></div>',
-	'4_8'     => '<div class="img4_8"></div>'
+    '12'      => '<div class="img12"></div>',
+    '6_6'     => '<div class="img6_6"></div>',
+    '4_4_4'   => '<div class="img4_4_4"></div>',
+    '3_3_3_3' => '<div class="img3_3_3_3"></div>',
+    '6_3_3'   => '<div class="img6_3_3"></div>',
+    '3_6_3'   => '<div class="img3_6_3"></div>',
+    '3_3_6'   => '<div class="img3_3_6"></div>',
+    '8_4'     => '<div class="img8_4"></div>',
+    '4_8'     => '<div class="img4_8"></div>'
 );
 $grid    = '';
 foreach ( $options as $value => $label ) {
-	$checked = 'REX_VALUE[20]' == $value ? ' checked="checked"' : '';
-	$grid    .= '<label><input name="REX_INPUT_VALUE[20]" value="' . $value . '" type="radio"' . $checked . ' />' . $label . '</label>';
+    $checked = 'REX_VALUE[20]' == $value ? ' checked="checked"' : '';
+    $grid    .= '<label><input name="REX_INPUT_VALUE[20]" value="' . $value . '" type="radio"' . $checked . ' />' . $label . '</label>';
 }
 echo '
     <div id="einstellungen" class="tab-pane fade in active">
@@ -81,9 +81,9 @@ echo '
           </div>
         </fieldset>
       </div>';
-container_input( 5 );
-id_class_input( 5 );
-media_manager_typ_input( 5 );
+    container_input( 5 );
+    id_class_input( 5 );
+    media_manager_typ_input( 5 );
 echo '
   </div>
 </div>';

@@ -3,6 +3,13 @@
 
 ---
 
+### Version 0.1.5 // 2.1.2018
+
+- Standard-Modul
+
+
+---
+
 ### Version 0.1.4 // 27.1.2018
 
 - So einige Änderungen :-)
