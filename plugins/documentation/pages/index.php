@@ -153,7 +153,7 @@ $content = $fragment->parse('core/page/section.php');
 
 // Navigation und Inhalt ausgeben
 echo '
-<section class="addon_documentation" id="bootstrap-addon-wrapper">
+<section class="addon_documentation" id="bootstrap-helper-addon-wrapper">
     <div class="row">
         <div class="col-md-4 addon_documentation-navi">' . $navi . $langselect . '
         </div>

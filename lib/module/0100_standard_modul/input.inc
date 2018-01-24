@@ -9,7 +9,7 @@ $wrapper[5]     = array( '5', rex_var::toArray( 'REX_VALUE[5]' ) );
 $counter        = 0;
 $reihenfolgeneu = '';
 echo '
-<div id="bootstrap_modul_wrapper">
+<div id="bootstrap_helper_modul_wrapper">
   <input id="anrodnung" type="hidden" name="REX_INPUT_VALUE[19]" value="REX_VALUE[19]" />
     <div id="tabs">
       <ul class="nav nav-tabs">';

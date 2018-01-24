@@ -1,14 +1,22 @@
 ### Changelog ###
 
+
 ---
 
-### Version 0.1.5.1 // 2.1.2018
+### Version 0.1.5.2 // 24.01.2018
+
+- SCSS Fehler beseitigt
+
+
+---
+
+### Version 0.1.5.1 // 23.1.2018
 
 - Name geändert
 
 ---
 
-### Version 0.1.5 // 2.1.2018
+### Version 0.1.5 // 23.1.2018
 
 - Standard-Modul
 

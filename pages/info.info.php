@@ -1,7 +1,4 @@
 <?php
-
-
-
 $file = rex_file::get(rex_path::addon('bootstrap_helper','readme.md'));
 $Parsedown = new Parsedown();
 $content =  $Parsedown->text($file);

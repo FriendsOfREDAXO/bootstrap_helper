@@ -1,4 +1,4 @@
-# Plugin "Dokumentation" für REDAXO5-AddOn "Bootstrap"
+# Plugin "Dokumentation" für REDAXO5-AddOn "Bootstrap Helper"
 
 ---
 

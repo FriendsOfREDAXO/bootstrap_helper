@@ -1,2 +1,2 @@
-# Bootstrap
+# Bootstrap Helper Addon
 

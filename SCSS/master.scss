@@ -207,7 +207,7 @@ body[id^="rex-page-bootstrap-helper"] {
   height: 39px;
 }
 
-#bootstrap_helper_wrapper .ui-sortable-helper {
+#bootstrap_helper_modul_wrapper .ui-sortable-helper {
 }
 
 #bootstrap_helper_modul_wrapper .nav-tabs > li > a:hover {
@@ -254,29 +254,29 @@ body[id^="rex-page-bootstrap-helper"] {
   display: none;
 }
 
-#bootstrap_helper_wrapper .grid label {
+#bootstrap_helper_modul_wrapper .grid label {
 }
 
 .grid label div,
-#bootstrap_helper_wrapper .gridimage,
-#bootstrap_helper_grid .gridimage {
+#bootstrap_helper_modul_wrapper .gridimage,
+#bootstrap_helper_modul_grid .gridimage {
   float: left;
   width: 340px;
   height: 60px;
   border: 1px solid #ccc;
 }
 
-#bootstrap_helper_wrapper .grid label:hover div {
+#bootstrap_helper_modul_wrapper .grid label:hover div {
   cursor: pointer;
   border: 1px solid #659CCE;
 }
 
-#bootstrap_helper_wrapper .grid :checked + div {
+#bootstrap_helper_modul_wrapper .grid :checked + div {
   border: 1px solid #737373 !important;
 }
 
-#bootstrap_helper_wrapper,
-#bootstrap_helper_grid {
+#bootstrap_helper_modul_wrapper,
+#bootstrap_helper_modul_grid {
   .img12 {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVQAAAA8CAIAAAC2INVhAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAQ9JREFUeNrs3TEKgzAYgNFagpuDBxC8/3HcBVcRXAQRQVJPYIcWapr3BpdAhh8+IoikiDE+gPw8jQDED4gfED8gfkD8gPgB8QPiB+4tXC8vy2JGkKiqqpz8gPgB8YP4AfED4gfED4gfED8gfkD8gPgB8QN/Gv84jsMwGCjkFf9xHH3fix8SEj7fYl3Xs/x9300TMoq/67p5ns0Rsou/ruuyLM/X/mmaTBMyir9pmvO5bZv4IS0+9YH4AfED4gfED/yR8J1dQmjb1jQhIUWM8WLZjT2QLjf2AOIHxA/iB8QPiB8QPyB+QPyA+AHxA+IHxA/czpu/+gAnPyB+QPyA+AHxA+IHxA+IHxA/8BMvAQYAX1c3Eu5IAT8AAAAASUVORK5CYII=);
   }
@@ -370,7 +370,7 @@ body[id^="rex-page-bootstrap-helper"] {
     }
   }
 }
-#bootstrap_helper_wrapper {
+#bootstrap_helper_modul_wrapper {
   .mform fieldset {
     margin-top: 22px;
     legend {
@@ -455,7 +455,7 @@ body[id^="rex-page-bootstrap-helper"] {
 
 //**/
 
-#bootstrap_helper_wrapper {
+#bootstrap_helper_modul_wrapper {
   .mblock_wrapper {
     margin: auto;
     padding: 0
@@ -562,6 +562,3 @@ body[id^="rex-page-bootstrap-helper"] {
   }
 
 }
-
-
-
