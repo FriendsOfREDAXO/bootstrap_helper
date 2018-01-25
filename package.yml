@@ -1,5 +1,5 @@
 package: bootstrap_helper
-version: '0.1.5.2'
+version: '0.1.5.3'
 author: 'Friends Of REDAXO'
 supportpage: https://github.com/FriendsOfREDAXO/bootstrap_helper/issues
 info: 'Idee und Realisierung der ersten Version: Oliver Kreischer / concedra.de'
@@ -38,4 +38,5 @@ page:
           title: 'translate:snippets'
           icon: rex-icon fa-cut
 
-
+requires:
+    redaxo: '^5.3.0'

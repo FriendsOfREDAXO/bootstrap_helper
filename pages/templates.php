@@ -1,6 +1,6 @@
 <?php
 
-$dir = '../redaxo/src/addons/bootstrap_helper/lib/templates';
+$dir = rex_path::addon('bootstrap_helper','lib/templates');
 $modulesdirs = glob($dir.'/*',GLOB_ONLYDIR);
 
 $templates = array();

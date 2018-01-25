@@ -12,10 +12,6 @@ Dieses AddOn stellt Bootstrap 4 kompatible Module und Templates bereit. (Wunsch)
 Weitere Informationen finden sich in der Dokumentation (Plugin installieren).
 
 
-### Bekannte Fehler
-
-- Safari sucks
-
 ---
 
 ### Autor: Friends Of REDAXO ###

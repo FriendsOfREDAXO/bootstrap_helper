@@ -3,6 +3,14 @@
 
 ---
 
+### Version 0.1.5.3 // 25.01.2018
+
+- Standard Modul gefixt
+- Pfade korrigiert
+
+
+---
+
 ### Version 0.1.5.2 // 24.01.2018
 
 - SCSS Fehler beseitigt

@@ -32,7 +32,7 @@ for ( $i = 1; $i <= count( $values ); $i ++ ) {
     $id    = $i;
     $mform = new MForm();
     $mform->addFieldset( 'Element', array( 'class' => 'elemente' ) );
-    $mform->addSelectField( "$id.0.element", array( '0'          => 'Element auswählen',
+    $mform->addSelectField( "$id.0.element", array( 'empty'          => 'Element auswählen',
                                                     'headline'   => 'Überschrift',
                                                     'textarea'   => 'Textfeld',
 //                                                  'linkbutton' => 'Link / Button'
@@ -92,7 +92,7 @@ echo '
     $(function () {
         $(document).on('change', '.elementSelect', function () {
             //console.log($(this).val());
-            console.log($(this).parents('.sortitem').find('fieldset.' + $(this).val()));
+            //console.log($(this).parents('.sortitem').find('fieldset.' + $(this).val()));
             $($(this).children()).each(function () {
                 $(this).parents('.sortitem').find('fieldset.' + $(this).val()).hide();
             });
@@ -102,14 +102,18 @@ echo '
         $(document).on('mblock:add', function (event, container) {
             $('.elementSelect option:selected').each(function (index) {
                 // console.log($(this).val());
-                if ($(this).val() == '0') {
+                if ($(this).val() == 'empty') {
+
+
+
                     $(this).parents('.sortitem').find('.elementSelect option').each(function (index) {
                         $(this).parents('.sortitem').find('fieldset.' + $(this).val()).hide();
                     });
+                } else {
+                    $(this).val() == 'empty';
                 }
             });
         });
-
 
         //only show selected elements on edit
         $('.elementSelect option:selected').each(function (index) {
