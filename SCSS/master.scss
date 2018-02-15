@@ -129,12 +129,16 @@ body[id^="rex-page-bootstrap-helper"] {
 }
 
 // Module
+#bootstrap_helper_modul_wrapper {
+  border: 2px solid red !important;
+}
 #bootstrap_helper_modul_wrapper #tabs i {
   display: none;
 }
 
 #bootstrap_helper_modul_wrapper #tabs span {
   display: inline-block;
+
 }
 
 @media (max-width: 767px) {

@@ -1,5 +1,5 @@
 package: bootstrap_helper
-version: '0.1.5.3'
+version: '0.1.5.5'
 author: 'Friends Of REDAXO'
 supportpage: https://github.com/FriendsOfREDAXO/bootstrap_helper/issues
 info: 'Idee und Realisierung der ersten Version: Oliver Kreischer / concedra.de'
@@ -12,31 +12,27 @@ page:
     subpages:
         info:
           title: 'translate:general'
-          icon: rex-icon fa-file
           subpages:
               info:
                 title: 'translate:info'
-                icon: rex-icon rex-icon-info
           #   moduluebersicht: { title: 'translate:moduluebersicht'}
           #   templateuebersicht: { title: 'translate:templateuebersicht'}
               roadmap:
                 title: 'translate:roadmap'
-                icon: rex-icon fa-road
               changelog:
                 title: 'translate:changelog'
-                icon: rex-icon fa-check
               license:
                 title: 'translate:license'
-                icon: rex-icon fa-file-text
         module:
           title: 'translate:module'
-          icon: rex-icon rex-icon-module
         templates:
           title: 'translate:templates'
-          icon: rex-icon rex-icon-template
         snippets:
           title: 'translate:snippets'
-          icon: rex-icon fa-cut
 
 requires:
+    packages:
+        mform: '^5.1.0'
+        mblock: '^2.1.0'
     redaxo: '^5.3.0'
+

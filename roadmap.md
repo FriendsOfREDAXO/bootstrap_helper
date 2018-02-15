@@ -37,10 +37,10 @@
 
 - [ ] Backend (S)CSS (Module)
 - "Modulcontainer" entwicklen
-    - [ ] Grid Auswahl in allen Modulen
-    - [x] Angabe von ID / Klassen
-    - [ ] Drag and Drop der Tabs in den Modulen
-        - [x] Reihenfolge Counter: Problem fixen
+    - [X] Grid Auswahl in allen Modulen
+    - [X] Angabe von ID / Klassen
+    - [X] Drag and Drop der Tabs in den Modulen
+        - [X] Reihenfolge Counter: Problem fixen
 - Template
   - [ ] Starter Template
 - Module
@@ -51,13 +51,13 @@
      - [ ] Text / Bild
      - [ ] freie Angabe von MediaManager Typen
 - Funktionen
-  - [ ] ID / Klassen
-  - [ ] Überschrift
-  - [ ] Text
+  - [X] ID / Klassen
+  - [X] Überschrift
+  - [X] Text
   - [ ] Accordion
   - [ ] Bild
-- [ ] Funktionen auslagern (aus boot.php)
+- [X] Funktionen auslagern -> Klasse erstellt
 - [ ] Doku erweitern
-- [x] Addon (S)CSS :-)
+- [X] Addon (S)CSS :-)
 
 

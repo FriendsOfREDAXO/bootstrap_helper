@@ -22,7 +22,7 @@ bootstrap_helper_acc_template             = Template
 bootstrap_helper_css                      = CSS
 bootstrap_helper_scss                     = SCSS
 
-bootstrap_helper_general                  = Allgemeines
+bootstrap_helper_general                  = Bootstrap Helper
 bootstrap_helper_snippets                 = Snippets
 bootstrap_helper_roadmap                  = Roadmap
 

@@ -9,7 +9,6 @@ defaultintro: 'main_intro.md'
 
 page:
     title: 'translate:documentation_menu_entry'
-    icon: rex-icon fa-book
     perm: admin[]
 
 

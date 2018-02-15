@@ -1,5 +1,5 @@
 <?php
-$values         = '';
+
 $values         = array();
 $values[1]      = array( '1', rex_var::toArray( 'REX_VALUE[1]' ) );
 $values[2]      = array( '2', rex_var::toArray( 'REX_VALUE[2]' ) );
@@ -8,6 +8,9 @@ $values[4]      = array( '4', rex_var::toArray( 'REX_VALUE[4]' ) );
 $wrapper[5]     = array( '5', rex_var::toArray( 'REX_VALUE[5]' ) );
 $counter        = 0;
 $reihenfolgeneu = '';
+
+$bsh_input = NEW rex_bootstrap_helper();
+
 echo '
 <div id="bootstrap_helper_modul_wrapper">
   <input id="anrodnung" type="hidden" name="REX_INPUT_VALUE[19]" value="REX_VALUE[19]" />
@@ -18,6 +21,7 @@ if ( 'REX_VALUE[19]' ) {
     for ( $i = 1; $i <= count( $values ); $i ++ ) {
         echo '<li id="' . ( $reihenfolgeneu[ ( $i - 1 ) ] ) . '" ><a data-toggle="tab" id="tab' . ( $reihenfolgeneu[ ( $i - 1 ) ] ) . '" href="#bereich' . ( $reihenfolgeneu[ ( $i - 1 ) ] ) . '"><i>B' . $i . '</i><span>Bereich ' . $i . '</span></a></li>';
     }
+
 } else {
     for ( $i = 1; $i <= count( $values ); $i ++ ) {
         echo '<li id="' . $i . '"><a data-toggle="tab" id="tab' . $i . '" href="#bereich' . $i . '"><i>B' . $i . '</i><span>Bereich ' . $i . '</span></a></li>';
@@ -32,19 +36,25 @@ for ( $i = 1; $i <= count( $values ); $i ++ ) {
     $id    = $i;
     $mform = new MForm();
     $mform->addFieldset( 'Element', array( 'class' => 'elemente' ) );
-    $mform->addSelectField( "$id.0.element", array( 'empty'          => 'Element auswählen',
+    $mform->addSelectField( "$id.0.element", array( 'empty'      => 'Element auswählen',
                                                     'headline'   => 'Überschrift',
                                                     'textarea'   => 'Textfeld',
+                                                    'downloads'  => 'Downloads',
+                                                    'video'      => 'Film (extern)',
 //                                                  'linkbutton' => 'Link / Button'
     ), array( 'label' => '', 'class' => 'elementSelect' ) );
-    element_headline_input( $id, $mform );
-    element_textarea_input( $id, $mform );
+    $bsh_input->headline_input( $id, $mform );
+    $bsh_input->textarea_input( $id, $mform );
+    $bsh_input->downloads_input( $id, $mform );
+    $bsh_input->video_input( $id, $mform );
 //  element_link_button_input( $id, $mform );
     echo MBlock::show( $id, $mform->show() );
     echo '<div class="extra_settings">Weitere Einstellungen<i class="fa fa-arrow-down" aria-hidden="true"></i></div>
         <div class="extra_settings_content">';
-    id_class_input( $id );
-    media_manager_typ_input( $id );
+
+    $bsh_input->id_class_input( $id );
+    $bsh_input->media_manager_typ_input( $id );
+
     echo '</div>
   </div>';
 }
@@ -81,9 +91,9 @@ echo '
           </div>
         </fieldset>
       </div>';
-    container_input( 5 );
-    id_class_input( 5 );
-    media_manager_typ_input( 5 );
+        $bsh_input->container_input( 5 );
+        $bsh_input->id_class_input( 5 );
+        $bsh_input->media_manager_typ_input( 5 );
 echo '
   </div>
 </div>';
@@ -102,15 +112,12 @@ echo '
         $(document).on('mblock:add', function (event, container) {
             $('.elementSelect option:selected').each(function (index) {
                 // console.log($(this).val());
-                if ($(this).val() == 'empty') {
-
-
-
+                if ($(this).val() == '0') {
                     $(this).parents('.sortitem').find('.elementSelect option').each(function (index) {
                         $(this).parents('.sortitem').find('fieldset.' + $(this).val()).hide();
                     });
                 } else {
-                    $(this).val() == 'empty';
+                    $(this).val() == '0';
                 }
             });
         });
@@ -127,7 +134,7 @@ echo '
             $(this).next().slideToggle(200);
         });
         $(function () {
-            $("#tabs ul.nav-tabs").sortable({
+            $("#tabs ul.nav-tabs ").sortable({
                 axis: "x",
                 items: '> li:not(.locked)',
                 update: function (e, ui) {
@@ -140,11 +147,12 @@ echo '
                 }
             });
         });
-        if ('REX_VALUE[20]' == '') {
-            $('a#tabweiteres').click();
-        } else {
-            $('#tabs ul.nav-tabs li a').first().click();
-        }
+
+            if ('REX_VALUE[20]' == '') {
+                $('a#tabweiteres').click();
+            } else {
+                $('#tabs ul.nav-tabs li a').first().click();
+            }
 
         function grid(str) {
             if (str == '12') {
@@ -152,7 +160,7 @@ echo '
                 $('#tab2').css('display', 'none');
                 $('#tab3').css('display', 'none');
                 $('#tab4').css('display', 'none');
-            } else if (str == '6_6' || str == '8_4' || str == '4_8') {
+             } else if (str == '6_6' || str == '8_4' || str == '4_8') {
                 $('#tab1').css('display', 'block');
                 $('#tab2').css('display', 'block');
                 $('#tab3').css('display', 'none');
@@ -177,3 +185,6 @@ echo '
         });
     });
 </script>
+
+
+

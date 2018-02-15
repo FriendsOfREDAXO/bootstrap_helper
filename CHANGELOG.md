@@ -1,5 +1,16 @@
 ### Changelog ###
 
+---
+
+### Version 0.1.5.5 // 15.02.2018
+
+- Standard Modul erweitert
+
+### Version 0.1.5.4 // 25.01.2018
+
+- redactor Abfrage korrigiert
+- rex_bootstrap_helper Class erstellt
+- Abhängigkeit mForm / mBlock berücksichtigt
 
 ---
 
@@ -8,13 +19,11 @@
 - Standard Modul gefixt
 - Pfade korrigiert
 
-
 ---
 
 ### Version 0.1.5.2 // 24.01.2018
 
 - SCSS Fehler beseitigt
-
 
 ---
 
