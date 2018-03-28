@@ -23,9 +23,8 @@ class rex_bootstrap_helper {
       }
       if ( rex_addon::get( 'redactor2' )->isAvailable() ) {
         $return = 'redactor';
-
-       if ( ! redactor2::profileExists( 'simple' ) ) {
-          redactor2::insertProfile( 'simple', 'Angelegt durch das Addon Bootstrap Helper', '200', '800', 'relative', 'bold, italic, underline, deleted, quote, sub, sup, code, unorderedlist, orderedlist, grouplink[external|internal|email], cleaner' );
+        if ( ! redactor2::profileExists( 'simple' ) ) {
+          redactor2::insertProfile('simple', 'Angelegt durch das Addon Bootstrap Helper', '200', '800', 'relative', '0', '0', '0', '1', 'bold, italic, underline, deleted, quote, sub, sup, code, unorderedlist, orderedlist, grouplink[external|internal|email], cleaner','');
         }
       }
       return $return;
@@ -417,9 +416,8 @@ function downloads_output( $downloads_headline, $REX_MEDIALIST_1 ) {
           }
 
 
-
-
             $arr = explode(",",$REX_MEDIALIST_1);
+            $download_be_dateien = '';
             $download_fe_dateien = '';
 
             foreach ($arr as $value_dl) {
@@ -430,6 +428,7 @@ function downloads_output( $downloads_headline, $REX_MEDIALIST_1 ) {
 
 
               $download_fe_dateien .='<li><a href="index.php?rex_media_type=download&rex_media_file='.$value_dl.'">'.$parsed_icon;
+              $download_be_dateien .= $value_dl.'<br/>';
 
               if ($file_desc != "") {
                 $download_fe_dateien .= $file_desc;
@@ -439,18 +438,14 @@ function downloads_output( $downloads_headline, $REX_MEDIALIST_1 ) {
 
               $download_fe_dateien .= ' ('.datei_groesse(rex_path::media($value_dl)).')</a></li>';
             }
-
-
-
-
-          $fe_output[] = $download_fe_dateien.PHP_EOL;
+          $fe_output[] = '<ul class="download" >'.$download_fe_dateien.'</ul>';
       }
       $be_output[] = '<legend>Downloads</legend>
               <div class="form-group">
                 <div class="col-sm-3 label_left">Überschrift</div>
                 <div class="col-sm-9">' . $downloads_headline . '</div>
-                <div class="col-sm-3 label_left">Dateien</div>
-                <div class="col-sm-9">'.$download_fe_dateien.'</div>
+                <div class="col-sm-3 label_left">Dateie(n)</div>
+                <div class="col-sm-9">'.$download_be_dateien.'</div>
               </div>';
     }
     if ( ! rex::isBackend() ) {
@@ -459,6 +454,126 @@ function downloads_output( $downloads_headline, $REX_MEDIALIST_1 ) {
       return implode( $be_output );
     }
 }
+
+
+
+
+////////////////////////////////////
+//  Link
+////////////////////////////////////
+function link_input( $id, $mform ) {
+  $mform->addFieldset(
+    'Link (intern / extern)<i class="module_help_link fa fa-exclamation-triangle" aria-hidden="true"></i>',
+    array(
+      'class' => 'link',
+      'style' => 'display:none;'
+    )
+  );
+  $mform->addHtml( '<div class="module_help_content">
+      <p>Es kann nur eine interner ODER ein externer Link angegeben werden.</p>
+      <p><em>Sollten Sie nicht wissen, was mit "Darstellung" oder "CSS Klasse" gemeint ist fragen Sie Ihren Webentwickler.</em></p>
+      </div>' );
+  $mform->addTextField("$id.0.link_name", array( 'label' => 'Bezeichnung'));
+  $mform->addTextField("$id.0.link_extern", array( 'label' => 'Link extern'));
+  $mform->addLinkField(1,array('label'=>'Link intern'));
+  $mform->addSelectField(
+    "$id.0.link_type",
+    array(
+      'Normal'  => 'Normal',
+      'Button'  => 'Button'
+    ),
+    array(
+      'label' => 'Darstellung'
+    )
+  );
+  $mform->addTextField("$id.0.link_class", array( 'label' => 'CSS Klasse'));
+}
+
+function link_output( $link_name, $link_extern, $REX_LINK_1, $link_type, $link_class ) {
+  $fe_output = [];
+  $be_output = [];
+
+      $be_output[] = '<legend>Link (intern / extern)</legend>';
+
+    if ( $link_name == '' ) {
+      $be_output[] = '
+              <div class="alert alert-danger">
+                <p><strong>Bitte geben Sie unbedingt eine Link Bezeichnung an!</strong></p>
+              </div>';
+     }
+
+
+    if ( $link_extern == '' AND $REX_LINK_1 == '') {
+      $be_output[] = '<div class="alert alert-danger">
+                <p><strong>Es wird kein Link ausgegeben. Bitte geben Sie einen Link an!</strong></p>
+              </div>';
+    } else if ( $link_extern != '' AND $REX_LINK_1 != '') {
+      $be_output[] = '
+              <div class="alert alert-danger">
+                <p><strong>Es wird kein Link ausgegeben. Bitte geben Sie nur einen externen ODER einen internen Link an!</strong></p>
+              </div>';
+
+    } else {
+
+
+      $be_output[] = '<div class="form-group">';
+
+     if($link_name != '')  {
+       $be_output[] = '
+         <div class="col-sm-3 label_left">Bezeichnung</div>
+         <div class="col-sm-9">'.$link_name.'</div>';
+     }
+
+     if($link_extern != '')  {
+      $be_output[] = '
+                <div class="col-sm-3 label_left">extern</div>
+                <div class="col-sm-9">'.$link_extern.'</div>';
+
+     }
+
+// NEU !!!
+
+ if ($link_class != '') {
+                  if ($link_type == 'Button') {
+                    $fe_output[] = '<a class="btn btn-primary '.$link_class.'" href="'.$link_extern.'" role="button" >'.$link_name.'</a>';
+                  } else {
+                    $fe_output[] = '<a class="'.$link_class.'" href="'.$link_extern.'" >'.$link_name.'</a>';
+                  }
+                } else {
+                  if ($link_type == 'Button') {
+                    $fe_output[] = '<a class="btn btn-primary" href="'.$link_extern.'" role="button" >'.$link_name.'</a>';
+                  } else {
+                    $fe_output[] = '<a href="'.$link_extern.'" >'.$link_name.'</a>';
+                  }
+                }
+
+     if($REX_LINK_1 != '')  {
+       $article=rex_article::get($REX_LINK_1);
+       $name=$article->getName();
+       $be_output[] = '
+          <div class="col-sm-3 label_left">Link intern</div>
+          <div class="col-sm-9">   <a href="index.php?page=content&article_id='.$REX_LINK_1.'&mode=edit">'.$name.' (ID = '.$REX_LINK_1.')</a> </div>';
+        }
+        $be_output[] = '
+          <div class="col-sm-3 label_left">Darstellung</div>
+          <div class="col-sm-9">'.$link_type.'</div>';
+
+     if($link_class != '')  {
+       $be_output[] = '
+         <div class="col-sm-3 label_left">CSS Klasse</div>
+         <div class="col-sm-9">'.$link_class.'</div>';
+     }
+
+     $be_output[] = '
+       </div>';
+    }
+    if ( ! rex::isBackend() ) {
+      return implode( $fe_output );
+    } else {
+      return implode( $be_output );
+    }
+}
+
 
 
 }

@@ -26,7 +26,7 @@ $lang = rex::getUser()->getLanguage();
 // Feste Sprache der Dokumentation aus package.yml
 if ($plugin->getProperty('documentationlang')) {
     $lang = $plugin->getProperty('documentationlang');
-    $_SESSION['addon_documentation']['doclang'] = $lang;
+    $_SESSION['bsh_addon_documentation']['doclang'] = $lang;
 } else {
 // Bei mehreren verfügbaren Sprachen Sprachwähler aufbauen
     $docs = [];
@@ -39,8 +39,8 @@ if ($plugin->getProperty('documentationlang')) {
         }
     }
     if (count($docs) > 1) {
-        if (isset($_SESSION['addon_documentation']['doclang'])) {
-            $lang = $_SESSION['addon_documentation']['doclang'];
+        if (isset($_SESSION['bsh_addon_documentation']['doclang'])) {
+            $lang = $_SESSION['bsh_addon_documentation']['doclang'];
         }
         if ($doclang) {
             $lang = $doclang;
@@ -62,7 +62,7 @@ if ($plugin->getProperty('documentationlang')) {
         </form>
         ';
         if ($formsubmit) {
-            $_SESSION['addon_documentation']['doclang'] = $lang;
+            $_SESSION['bsh_addon_documentation']['doclang'] = $lang;
         }
     }
 }
@@ -153,11 +153,11 @@ $content = $fragment->parse('core/page/section.php');
 
 // Navigation und Inhalt ausgeben
 echo '
-<section class="addon_documentation" id="bootstrap-helper-addon-wrapper">
+<section class="bsh_addon_documentation" id="bootstrap-helper-addon-wrapper">
     <div class="row">
-        <div class="col-md-4 addon_documentation-navi">' . $navi . $langselect . '
+        <div class="col-md-4 bsh_addon_documentation-navi">' . $navi . $langselect . '
         </div>
-        <div class="col-md-8 addon_documentation-content">' . $content . '
+        <div class="col-md-8 bsh_addon_documentation-content">' . $content . '
         </div>
     </div>
 </section>

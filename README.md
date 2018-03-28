@@ -1,9 +1,4 @@
-## Bootstrap Helper
-
----
-
-ACHTUNG: DAS HIER IST EINE ABSOLUTE APLHA-VERSION!!
-====
+## Bootstrap Helper (Alpha)
 
 ---
 

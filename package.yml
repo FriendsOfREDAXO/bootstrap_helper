@@ -1,5 +1,5 @@
 package: bootstrap_helper
-version: '0.1.5.5'
+version: '0.1.5.6'
 author: 'Friends Of REDAXO'
 supportpage: https://github.com/FriendsOfREDAXO/bootstrap_helper/issues
 info: 'Idee und Realisierung der ersten Version: Oliver Kreischer / concedra.de'
@@ -15,8 +15,6 @@ page:
           subpages:
               info:
                 title: 'translate:info'
-          #   moduluebersicht: { title: 'translate:moduluebersicht'}
-          #   templateuebersicht: { title: 'translate:templateuebersicht'}
               roadmap:
                 title: 'translate:roadmap'
               changelog:
@@ -27,8 +25,8 @@ page:
           title: 'translate:module'
         templates:
           title: 'translate:templates'
-        snippets:
-          title: 'translate:snippets'
+        # snippets:
+          # title: 'translate:snippets'
 
 requires:
     packages:

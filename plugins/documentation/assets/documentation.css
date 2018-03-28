@@ -1,9 +1,9 @@
-.addon_documentation h1 {
+.bsh_addon_documentation h1 {
     font-size: 22px;
     margin-top: 5px;
     margin-bottom: 20px;
 }
-.addon_documentation h2 {
+.bsh_addon_documentation h2 {
     font-size: 16px;
     margin-top: 40px;
     text-transform: uppercase;
@@ -13,86 +13,119 @@
     padding: 13px 15px 10px;
     background: #dfe3e9 !important;
 }
-.addon_documentation h3 {
+.bsh_addon_documentation h3 {
     margin-top: 40px;
     margin-bottom: 5px;
 }
 
-.addon_documentation blockquote {
+.bsh_addon_documentation blockquote {
     margin: 20px 0;
     background: #f3f6fb;
 }
-.addon_documentation blockquote h2 {
+.bsh_addon_documentation blockquote h2 {
     margin: -10px -20px 20px;
     background: transparent;
-	border-top: 1px #ccc;
+    border-top: 1px #ccc;
 }
 
-.addon_documentation ol {
+.bsh_addon_documentation ol {
     padding-left: 18px;
 }
 
-.addon_documentation ul {
+.bsh_addon_documentation ul {
     margin-bottom: 10px;
-	padding-bottom: 5px;;
+    padding-bottom: 5px;;
     padding-left: 16px;
 }
-.addon_documentation ul li {
+.bsh_addon_documentation ul li {
     list-style-type: square;
     list-style-position: outside;
 }
-.addon_documentation ul ul {
+.bsh_addon_documentation ul ul {
     padding-top: 5px;
 }
-.addon_documentation ul ul li {
+.bsh_addon_documentation ul ul li {
     list-style-type: circle;
     list-style-position: outside;
     padding-bottom: 0;
 }
 
-.addon_documentation p,
-.addon_documentation li {
+.bsh_addon_documentation p,
+.bsh_addon_documentation li {
     font-size: 14px;
     line-height: 1.6;
 }
 
-.addon_documentation hr {
+.bsh_addon_documentation hr {
     margin-top: 40px;
     border-top: 1px solid #ddd;
 }
 
-.addon_documentation table {
+.bsh_addon_documentation table {
     width: 100%;
     max-width: 100%;
     border: 1px solid #ddd;
     margin: 20px 0 30px;
 }
-.addon_documentation th {
+.bsh_addon_documentation th {
     background: #f7f7f7;
     border-bottom: 2px solid #ddd;
     border-collapse: separate;
 }
-.addon_documentation th,
-.addon_documentation td {
+.bsh_addon_documentation th,
+.bsh_addon_documentation td {
     border: 1px solid #ddd;
     padding: 8px;
     line-height: 1.42857143;
     vertical-align: top;
     font-size: 13px;
 }
-.addon_documentation table tr:hover {
+.bsh_addon_documentation table tr:hover {
     background: #fafafa;
 }
 
-.addon_documentation-navi a.current {
+.bsh_addon_documentation-navi a.current {
     font-weight: bold;
 }
 
-.addon_documentation a[href^="http://"],
-.addon_documentation a[href^="https://"] {
+.bsh_addon_documentation a[href^="http://"],
+.bsh_addon_documentation a[href^="https://"] {
     margin-right:5px;
 }
-.addon_documentation a[href^="http://"] sup,
-.addon_documentation a[href^="https://"] sup {
+.bsh_addon_documentation a[href^="http://"] sup,
+.bsh_addon_documentation a[href^="https://"] sup {
     font-size:0.8em;
+}
+
+.bsh_addon_documentation-navi p strong {
+    display: inline-block;
+    border-bottom: 2px solid #eee;
+    width: 100%;
+}
+
+.bsh_addon_documentation-navi ul {
+    margin-bottom: 32px;
+    padding-left: 0;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.bsh_addon_documentation-navi ul li {
+    list-style-type: none;
+    margin: 0 0 0 20px;
+    line-height: 2;
+}
+.bsh_addon_documentation-navi ul li :before {
+    font-family: FontAwesome;
+    content: '\f061';
+    color: #bbb;
+    margin-right: 8px;
+}
+.bsh_addon_documentation-navi ul li a:hover {
+    text-decoration: none;
+}
+.bsh_addon_documentation-navi ul li a:hover:before {
+    font-family: FontAwesome;
+    content: '\f061';
+    color: #563d7c;
+    margin-right: 8px;
 }

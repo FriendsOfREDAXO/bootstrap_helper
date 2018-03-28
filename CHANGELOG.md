@@ -2,6 +2,11 @@
 
 ---
 
+### Version 0.1.5.6 // 16.02.2018
+
+- Starter Template angepasst
+
+
 ### Version 0.1.5.5 // 15.02.2018
 
 - Standard Modul erweitert
@@ -46,11 +51,11 @@
 
 ---
 
-### Version 0.1.3 // 04.09.2018
+### Version 0.1.3 // 04.09.2017
 
 - Idee mit den Fragmenten verworfen -> Funktionen :-)
 
-### Version 0.1.2 // 31.08.2018
+### Version 0.1.2 // 31.08.2017
 
 - (S)CSS Anpassungen
 - Fragmente angepasst
@@ -58,7 +63,7 @@
 
 ---
 
-### Version 0.1.1 // 28.08.2018
+### Version 0.1.1 // 28.08.2017
 
 - inkompatible Module und Template gelöscht
 - Modul _Text + Accordion_ bearbeitet
@@ -66,7 +71,7 @@
 
 ---
 
-### Version 0.1.0 // 25.08.2018
+### Version 0.1.0 // 25.08.2017
 
 - erste Version
 

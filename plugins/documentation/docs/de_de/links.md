@@ -1,4 +1,4 @@
-# Sonstiges
+# Links
 
 Hier finden sich (hoffentliche) interessante / hilfreiche Links zum Thema Bootstrap.
 

@@ -1,15 +1,11 @@
-**Inhaltsverzeichnis**
-
-- [Startseite](main_intro.md)
-
 **Module**
 
-<!-- - [0030 - Text / Download](0030.md) -->
+- [0100 - Standard-Modul](module_0100_standard-modul.md)
 
 
 **Templates**
-<!-- - [0010 - Quickstart](t_0010.md) -->
+- [0010 - Test Template](templates_0010_test_template.md)
 
 
-**---**
-- [Sonstiges](sonstiges.md)
+**Sonstiges**
+- [Links](links.md)
