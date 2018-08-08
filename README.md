@@ -1,3 +1,6 @@
+*ACHTUNG* Dieses AddOn wird nicht mehr weiterentwicklet.
+
+
 ## Bootstrap Helper (Alpha)
 
 ---
